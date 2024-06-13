@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Complex_1 = require("./Complex");
+const prompt = require('prompt-sync')();
+const complex1 = new Complex_1.Complex(1, 2);
+console.log(complex1.toString());
+const complex2 = new Complex_1.Complex(3);
+console.log(complex2.toString());
+complex1.Sum(complex2);
+console.log(complex1.toString());
+complex1.Subtraction(complex2);
+console.log(complex1.toString());
