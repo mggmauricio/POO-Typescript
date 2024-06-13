@@ -1,7 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Triangle_1 = require("./Triangle");
+const prompt = require('prompt-sync')();
 const defaultTriangle = new Triangle_1.Triangle();
+console.log(defaultTriangle.toString());
+console.log(`Area: ${defaultTriangle.area()}`);
+console.log(`Perimetro: ${defaultTriangle.perimeter()}`);
+const side = parseInt(prompt("Digite o lado do triangulo:"));
+defaultTriangle.setSide(side);
 console.log(defaultTriangle.toString());
 console.log(`Area: ${defaultTriangle.area()}`);
 console.log(`Perimetro: ${defaultTriangle.perimeter()}`);
