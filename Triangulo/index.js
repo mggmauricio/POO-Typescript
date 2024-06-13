@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Triangle_1 = require("./Triangle");
+const defaultTriangle = new Triangle_1.Triangle();
+console.log(defaultTriangle.toString());
+console.log(`Area: ${defaultTriangle.area()}`);
+console.log(`Perimetro: ${defaultTriangle.perimeter()}`);
+const myTriangle = new Triangle_1.Triangle(5);
+console.log(myTriangle.toString());
+console.log(`Area: ${myTriangle.area()}`);
+console.log(`Perimetro: ${myTriangle.perimeter()}`);
